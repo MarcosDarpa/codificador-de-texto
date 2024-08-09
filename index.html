@@ -1,39 +1,41 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Codificador de Texto</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-    <div class="container">
-        <header>
-            <img src="Frame 6.png" alt="">
-        </header>
-        <main>
-            <div class="content">
-                <div class="text-area">
-                    <label for="inputText">Digite seu texto</label>
-                    <textarea id="inputText" rows="10"></textarea>
-                    <div class="info">Apenas letras minúsculas e sem acento.</div>
-                    <div class="buttons">
-                        <button onclick="criptografar()">Criptografar</button>
-                        <button onclick="descriptografar()">Descriptografar</button>
-                    </div>
-                </div>
-                <div class="message-area">
-                    <div id="message-box" class="message-box">
-                        <img id="message-img" src="High quality products 1 1.jpg" alt="Nenhuma mensagem encontrada">
-                        <p id="message-title" class="title">Nenhuma mensagem encontrada</p>
-                        <p id="message-text">Digite um texto que você deseja criptografar ou descriptografar.</p>
-                        <button id="copy-button" style="display: none;" onclick="copiarTexto()">Copiar</button>
-                    </div>
-                </div>
+    <header>
+        <img src="Frame 6.png" class="logo" alt="Logo Alura">
+    </header>
+    <main>
+        
+        <section>
+            <textarea class="text-area" cols="41" rows="4" placeholder="Digite seu texto"></textarea>
+            <div>
+                <h6>Apenas letras minuscúlas sem acento</h6>
             </div>
-        </main>
-    </div>
+            <div class="button">
+                <button class="bnt-encriptar">Criptografar</button>
+                <button class="bnt-desencriptar">Descriptografar</button>
+            </div>
+        </section>
+        <section>
+            <textarea class="mensagem" cols="20" rows="10"></textarea>
+            <button class="bnt-copiar">Copiar</button>
+        </section>
+    </main>
 
     <script src="scripts.js"></script>
 </body>
+
 </html>
